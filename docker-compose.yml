@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  charbank:
+    build: .
+    ports:
+      - "8008:8008"
+    volumes:
+      - ./data:/app/data        # persist SQLite database
+      - ./htmlcov:/app/htmlcov  # live HTML templates
+    environment:
+      FLASK_APP: app
+      FLASK_RUN_HOST: 0.0.0.0
+      FLASK_RUN_PORT: 8008
+    command: flask run

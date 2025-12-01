@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Create Character{% endblock %}
+
+{% block content %}
+<h1>Create a New Character</h1>
+
+<form method="POST" class="character-form">
+
+    <label for="name">Character Name:</label>
+    <input type="text" id="name" name="name" placeholder="Character Name" required>
+
+    <label for="class">Class:</label>
+    <select id="class" name="class" required>
+        <option value="Barbarian">Barbarian</option>
+        <option value="Bard">Bard</option>
+        <option value="Cleric">Cleric</option>
+        <option value="Druid">Druid</option>
+        <option value="Fighter">Fighter</option>
+        <option value="Monk">Monk</option>
+        <option value="Paladin">Paladin</option>
+        <option value="Ranger">Ranger</option>
+        <option value="Rogue">Rogue</option>
+        <option value="Sorcerer">Sorcerer</option>
+        <option value="Warlock">Warlock</option>
+        <option value="Wizard">Wizard</option>
+    </select>
+
+    <label for="race">Race:</label>
+    <select id="race" name="race" required>
+        <option value="Assimar">Assimar</option>
+        <option value="Dragonborn">Dragonborn</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Elf">Elf</option>
+        <option value="Gnome">Gnome</option>
+        <option value="Goliath">Goliath</option>
+        <option value="Halfling">Halfling</option>
+        <option value="Human">Human</option>
+        <option value="Orc">Orc</option>
+        <option value="Tiefling">Tiefling</option>
+    </select>
+
+    <label for="background">Background:</label>
+    <select id="background" name="background" required>
+        <option value="Acolyte">Acolyte</option>
+        <option value="Artisan">Artisan</option>
+        <option value="Charlatan">Charlatan</option>
+        <option value="Criminal">Criminal</option>
+        <option value="Entertainer">Entertainer</option>
+        <option value="Farmer">Farmer</option>
+        <option value="Guard">Guard</option>
+        <option value="Guide">Guide</option>
+        <option value="Hermit">Hermit</option>
+        <option value="Merchant">Merchant</option>
+        <option value="Noble">Noble</option>
+        <option value="Sage">Sage</option>
+        <option value="Sailor">Sailor</option>
+        <option value="Scribe">Scribe</option>
+        <option value="Soldier">Soldier</option>
+        <option value="Wayfarer">Wayfarer</option>
+    </select>
+
+    <label for="backstory">Backstory (max 1000 characters):</label>
+    <textarea id="backstory" name="backstory" maxlength="1000" class="big-textarea"></textarea>
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="public"> Make Character Public
+    </label>
+
+    <button type="submit" class="btn">Create Character</button>
+</form>
+
+<a href="{{ url_for('main.dashboard') }}" class="btn">Back to Dashboard</a>
+
+{% endblock %}

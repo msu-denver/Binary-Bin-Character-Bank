@@ -1,0 +1,22 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Database files (persisted via volume, no need to copy into image)
+data/*
+
+# Logs
+*.log
+
+# Temporary editor files
+*.swp

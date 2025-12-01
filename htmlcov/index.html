@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Character App</h1>
+
+<p>Please choose an option:</p>
+<a href="{{ url_for('main.login') }}" class=btn>Login</a>
+<a href="{{ url_for('main.register') }}" class="btn">Register</a>
+{% endblock %}

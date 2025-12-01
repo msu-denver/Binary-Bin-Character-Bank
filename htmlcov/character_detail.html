@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Character Details{% endblock %}
+
+{% block content %}
+<h1>{{ character.name }}</h1>
+
+<p><strong>Class:</strong> {{ character.character_class }}</p>
+<p><strong>Race:</strong> {{ character.race }}</p>
+<p><strong>Background:</strong> {{ character.background }}</p>
+<p><strong>Backstory:</strong> {{ character.backstory }}</p>
+<p><strong>Visibility:</strong> {% if character.is_public %}Public{% else %}Private{% endif %}</p>
+
+<h2>Ability Scores</h2>
+<ul>
+    <li>Strength: {{ character.strength }}</li>
+    <li>Dexterity: {{ character.dexterity }}</li>
+    <li>Constitution: {{ character.constitution }}</li>
+    <li>Intelligence: {{ character.intelligence }}</li>
+    <li>Wisdom: {{ character.wisdom }}</li>
+    <li>Charisma: {{ character.charisma }}</li>
+</ul>
+
+<a href="{{ url_for('main.dashboard') }}" class="btn">Back to Dashboard</a>
+{% endblock %}

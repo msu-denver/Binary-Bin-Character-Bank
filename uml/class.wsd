@@ -1,0 +1,31 @@
+@startuml
+
+class App {
+    + POST /characters
+    + GET /characters
+    + GET /characters/{id}
+    + PUT /characters/{id}
+    + DELETE /characters/{id}
+}
+
+class CharacterManager {
+    + get_all()
+    + get(id)
+    + add(character)
+    + update(id, data)
+    + delete(id)
+}
+
+class Character {
+    - id : string
+    - name : string
+    - race : string
+    - class : string
+    - background : string
+    - is_public : bool
+}
+
+CharacterManager "1" *-- "many" Character : manages
+App --> CharacterManager : uses
+
+@enduml

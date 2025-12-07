@@ -7,7 +7,8 @@ rectangle "Binary-Bin Character Bank" {
     usecase "UC2: View All Characters" as UC2
     usecase "UC3: View Character by ID" as UC3
     usecase "UC4: Update Character" as UC4
-    usecase "UC5: Delete Character" as UC5
+    usecase "UC5: Copy Character" as UC5
+    usecase "UC6: Delete Character" as UC6
 }
 
 User --> UC1
@@ -15,5 +16,6 @@ User --> UC2
 User --> UC3
 User --> UC4
 User --> UC5
+User --> UC6
 
 @enduml

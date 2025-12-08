@@ -5,6 +5,22 @@ from .models import db, User, Character
 
 main = Blueprint('main', __name__)
 
+# ------------------ Registration Helper ------------------
+
+def register_user(username, password):
+    """Register a new user and return a message and success flag."""
+    if not username or not password:
+        return "Missing data", False
+
+    if User.query.filter_by(username=username).first():
+        return "Username already taken", False
+
+    hashed_password = generate_password_hash(password)
+    user = User(username=username, password=hashed_password)
+    db.session.add(user)
+    db.session.commit()
+    return "User registered", True
+
 # Ability modifiers
 CLASS_MODIFIERS = {
     "Fighter": {"strength": 2, "constitution": 1},

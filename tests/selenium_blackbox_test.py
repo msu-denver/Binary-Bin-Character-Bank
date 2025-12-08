@@ -14,13 +14,13 @@ fixed_username = "blackbox_test_user"
 # Generate a unique username for first registration
 unique_username = f"blackbox_user_{int(time.time())}_{random.randint(1000,9999)}"
 
-# Setup Firefox WebDriver
+# Firefox WebDriver
 service = Service(executable_path=GeckoDriverManager().install())
 driver = webdriver.Firefox(service=service)
 wait = WebDriverWait(driver, 15)
 
 try:
-    # Test 1: Try to register (should always succeed with unique username)
+    # Test 1: Try to register
     print("=== TEST 1: Registration Attempt ===")
     try:
         driver.get("http://localhost:8008/register")
@@ -35,7 +35,7 @@ try:
     except Exception as e:
         print(f"Test 1 Failed: {e}")
 
-    # Test 2: Try duplicate registration (should ALWAYS fail)
+    # Test 2: Try duplicate registration
     print("\n=== TEST 2: Duplicate Registration Attempt ===")
     try:
         driver.get("http://localhost:8008/register")

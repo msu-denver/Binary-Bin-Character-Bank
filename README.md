@@ -31,7 +31,10 @@ This section should describe, in general terms, how Scrum was applied in the pro
 |Sprint#|Goals|Start|End|Done|Observations|
 |---|---|---|---|---|---|
 |1|US#1, US#2, ...|mm/dd/23|mm/dd/23|US#1|...|
-|1|Plan out|11/18/25|11/21/25|We were trying to decide what do for our project Steve Wanted to do a weather app Malachi wanted to do a character data bank. We decided the data bank would be better|...|
+|1|US#1: Planout, Create Login|11/18/25|11/22/25|US#1|User Login done|
+|2|US#2,3,4:Ceate Characters, store, view others users characters|11/22/25|11/28/25|US#2,3,4|Work compelete code ran well|
+|3|US#5.6,7:testing,fix usecase, finsish notes|12/02/25|12/08/25|US#5,6,7|Testing was done, notes were compelete ready to push|
+
 
 
 
@@ -49,5 +52,6 @@ Embed an image of the burndown chart here.
 
 
 In this section, share the results of the tests performed to verify the quality of the developed product, including the test coverage relative to the written code. Test coverage indicates how much of your code is exercised by tests, helping assess reliability. There is no minimum coverage requirement, but ensure there is at least some coverage through one white-box test (which examines internal logic and structure) and one black-box test (which validates functionality from the user’s perspective).
+
 
 

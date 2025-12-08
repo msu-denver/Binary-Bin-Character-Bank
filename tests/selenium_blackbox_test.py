@@ -8,7 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 import time
 import random
 
-# Use a FIXED username for duplicate test
+# FIXED username for duplicate test
 fixed_username = "blackbox_test_user"
 
 # Generate a unique username for first registration

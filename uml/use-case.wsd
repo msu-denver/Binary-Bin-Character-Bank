@@ -5,7 +5,7 @@ actor User
 rectangle "Binary-Bin Character Bank" {
     usecase "UC1: Add Character" as UC1
     usecase "UC2: View All Characters" as UC2
-    usecase "UC3: View Character by ID" as UC3
+    usecase "UC3: View Personal Characters" as UC3
     usecase "UC4: Update Character" as UC4
     usecase "UC5: Copy Character" as UC5
     usecase "UC6: Delete Character" as UC6

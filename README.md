@@ -1,24 +1,54 @@
 # Overview
 
-Use this section to present the product vision, which is a clear statement of the overall goal and purpose of the product—what it aims to achieve, why it exists, and the target audience. Include a **use case diagram** that illustrates the main user interactions. This will give readers a clear and comprehensive overview of the project.
+
+
+This application is known as the Character Bank. It was developed to help new d&d players and DM's get ideas for characters. The character bank allows users to create a bare bones D&D 2024 edition, also sometimes referred to as D&D 5.5e, character for a quick speed up for final character creation. For players this might give them ideas for new characters while for DMs this is a good way to make template characters for people that are new to their table and to dungeons and dragons.
 
 # Design
 
 ## User Stories
 
-Describe the **user stories** for the project, which are short, simple descriptions of a feature told from the perspective of the end user. Each **user story** should include clear **acceptance criteria** and a **point estimate**. The **user stories** must align with the **use case diagram** and should be labeled as US#1, US#2, and so on. We suggest creating a separate Markdown section for each **user story**. 
+# User Story 1
+As a user, I want to be able to make a D&D character so that I can be prepared for future campaigns.
 
-Use the following template when writing your **user stories**. 
+# User Story 2
+As a user, I want to be able to view other user's character creations so that I can be inspired for my personal characters
 
-```
-As a [type of user], I want to [perform some task] so that I can [achieve some goal].
+# User Story 3
+As a user, I want to be able to view all of the characters I have made, private and public, so that I can have a list of characters to choose from for making a balanced party dynamic.
 
-Given that [context], when [some action is carried out] then [a set of observable outcomes should occur].
-```
+# User Story 4
+As a user, I want to be able to edit my characters so that I can fix any mistakes I may have previously made.
+
+# User Story 5
+As a user, I want to be able to copy interesting character ideas from the community bank so that I can fine tune the character idea towards my playstyle
+
+# User Story 6
+As a user, I want to be able to delete a character so that my personal character bank doesn't get over crowded.
+
+
 
 ## Sequence Diagram
+Below is a sequence diagram for character creation:
 
-At least one **user story**, unrelated to user creation or authentication, must be detailed using a **sequence diagram**. A **sequence diagram** is a type of UML diagram that shows how objects interact in a particular scenario, emphasizing the order of messages exchanged between components over time. This helps visualize the flow of operations and the responsibilities of different parts of the system.
+sequenceDiagram
+    actor User
+    participant UI as Web UI
+    participant Server as Backend
+    participant DB as Database
+
+    User->>UI: Click "Create Character"
+    UI->>Server: Request character creation page
+    Server->>UI: Send HTML creation form
+    UI-->>User: Display form
+
+    User->>UI: Fill form and click Submit
+    UI->>Server: POST character data
+    Server->>DB: Insert new character record
+    DB-->>Server: Insert success
+    Server-->>UI: Redirect to dashboard
+    UI-->>User: Show dashboard
+
 
 ## Model 
 

@@ -33,9 +33,12 @@ This section should describe, in general terms, how Scrum was applied in the pro
 |1|US#1, US#2, ...|mm/dd/23|mm/dd/23|US#1|...|
 
 
-|Sprint1|Plan out|11/18|11/21|Done|We were trying to decide what do for our project Steve Wanted to do a weather app Malachi wanted to do a character data bank. We decided the data bank would be better |
+|Sprint1|Plan out|11/18|11/21|Done|We were trying to decide what do for our project Steve Wanted to do a weather app Malachi wanted to do a character data bank. We decided the data bank would be better|
+
 |Sprint2|Implament/Documentation|11/22|11/28|Done|---|
+
 |Sprint3|Runing code/Uml|12/02|12/04|Done|---|
+
 |Retrospective|Pushing most pf the work |12/06|12/07|Done|---|
 
 As in Project 2, you should take notes on the major Scrum meetings: planning, daily scrums, review, and retrospective. These meetings are essential for tracking progress, identifying obstacles, and ensuring continuous improvement. Use the Scrum folder and the shared templates to record your notes in an organized and consistent manner.
@@ -46,3 +49,4 @@ Embed an image of the burndown chart here.
 
 
 In this section, share the results of the tests performed to verify the quality of the developed product, including the test coverage relative to the written code. Test coverage indicates how much of your code is exercised by tests, helping assess reliability. There is no minimum coverage requirement, but ensure there is at least some coverage through one white-box test (which examines internal logic and structure) and one black-box test (which validates functionality from the user’s perspective).
+

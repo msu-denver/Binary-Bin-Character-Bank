@@ -104,10 +104,15 @@ White box testing was written with python unittest to be able to test the intern
 
 The following was tested:
 Empty username 
+
 Empty password
+
 Existing username
+
 Valid new user
+
 These test will help to make sure all of the logics for the registration is valid and works well. And will return to the user the issues there is.
+
 
 
 

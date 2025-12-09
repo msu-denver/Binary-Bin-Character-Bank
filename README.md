@@ -103,15 +103,17 @@ Both test were passed
 White box testing was written with python unittest to be able to test the internal register_user() function.
 
 The following was tested:
-Empty username 
 
-Empty password
+Empty username,
 
-Existing username
+Empty password,
 
-Valid new user
+Existing username,
+
+Valid new user,
 
 These test will help to make sure all of the logics for the registration is valid and works well. And will return to the user the issues there is.
+
 
 
 

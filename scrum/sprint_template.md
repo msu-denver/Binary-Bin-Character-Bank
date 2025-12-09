@@ -99,20 +99,23 @@ After doing this project had a things that went well and this that did not go we
 
 Isuess we had:
 
-We were still trying to figure out what do for the project in the planning
-The code did not run properly on docker
-We were a bit behind with coding
-Had issues pushing to guthub
+We were still trying to figure out what do for the project in the planning,
+The code did not run properly on docker,
+We were a bit behind with coding,
+Had issues pushing to guthub,
 
 
 Things that went well:
 
 
 
-We were able to as a team work togeather
-Help eachother
-Stay in contact 
-Malachi was able to fix the docker issue
-Kalia was able to help out with the testing
+We were able to as a team work togeather,
+Help eachother,
+Stay in contact,
+Malachi was able to fix the docker issue,
+Kalia was able to help out with the testing,
 Steve was abel to write teh notes
+
+
+I would say overall as team we did a good job at making this project. Kalia and Malachi were very helpful in making the code. All memebers were also  were aslo willing to help eachother when we needed to do something that we were stuck on.
 

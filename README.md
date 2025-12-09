@@ -112,7 +112,9 @@ Existing username,
 
 Valid new user,
 
-These test will help to make sure all of the logics for the registration is valid and works well. And will return to the user the issues there is.
+These test will help to make sure all of the logics for the registration is valid and works well. And will return to the user the issues there is. All of these test were passed.
+With all of the test they did cover validation, logic with code, database, and error porblems. 
+
 
 
 

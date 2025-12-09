@@ -78,13 +78,36 @@ This section should describe, in general terms, how Scrum was applied in the pro
 
 As in Project 2, you should take notes on the major Scrum meetings: planning, daily scrums, review, and retrospective. These meetings are essential for tracking progress, identifying obstacles, and ensuring continuous improvement. Use the Scrum folder and the shared templates to record your notes in an organized and consistent manner.
 
-Embed an image of the burndown chart here. 
+Embed an image of the burndown chart here. <img width="1376" height="567" alt="Screenshot 2025-12-08 at 12 11 25 PM" src="https://github.com/user-attachments/assets/fb0f5c85-1fb8-492d-aaad-697a4195b494" />
+
 
 # Testing 
 
 
-In this section, share the results of the tests performed to verify the quality of the developed product, including the test coverage relative to the written code. Test coverage indicates how much of your code is exercised by tests, helping assess reliability. There is no minimum coverage requirement, but ensure there is at least some coverage through one white-box test (which examines internal logic and structure) and one black-box test (which validates functionality from the user’s perspective).
+To make sure that the Charcater data bank worked well and functioned well. Black box and white box testing were tools and methods we used to ensure our application worked corrctly.
+Testing makes surethat user is fucntion and interal appilcation logic works well.
+Black box testing was written using selenium webdriver so that it can simulate a user interaction in the web application. 
 
+The registration test:
+Open the register page
+Enter username
+Enter
+Validate the registration
+
+Duplicate username Test:
+Attempted to put the same username 
+The application gave a waring with .flash-danger to make sure that the user was informed about the username
+
+Both test were passed
+
+White box testing was written with python unittest to be able to test the internal register_user() function.
+
+The following was tested:
+Empty username 
+Empty password
+Existing username
+Valid new user
+These test will help to make sure all of the logics for the registration is valid and works well. And will return to the user the issues there is.
 
 
 

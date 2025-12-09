@@ -21,6 +21,18 @@ where we can store weather data. However the app would have been to simple. So M
 should do a d&d charcater databank where users can login and store characters and they can share the charcaters in the system. 
 Steve decided that would be a a better opiton, Kalia and Moheaed agreed taht we liked teh idea. So all four of us decided to work on the project.
 
+What did I do yesterday to help the team? 
+
+Malachi, Steve: We started by talking about ideas we have for our team to build for our project
+
+What will I do today to help the team?
+
+Malachi: I will start by writing code and planing out the project for our charcater bank.
+
+Do I see any impediment that prevents me
+to make progress?
+
+ Malachi, Steve, Kalia, Mohamed: We pretty were plannign things out and had 2 diifferent ideas on what to build but we agreed on what we should make.
 # Daily Scrums
 
 ## 11/26
@@ -29,13 +41,19 @@ Participants: All
 
 Notes
 Malachi wanted to start on working on the devoplement for the application. He created the dev branch. Steve started writing the documention.
+Kalia was also going to work on spme stuff with the project like UML Diagrams. After Malachi was going to be done withe code and implamenting the application we could pretty miuch get done with the user stories and the uml Diagrams so we can geta better understanding of how the code will work and how the data bank works. 
 
 What did I do yesterday to help the team? 
+
 Malachi: I Created the dev Branch and new repository. Started to also start with the coding. 
+
 What will I do today to help the team?
+
 Malachi: Guide them and tell them where I am at with the project
+
 Do I see any impediment that prevents me
 to make progress?
+
 Steve And Mohamend: We could not get the code to run becasue teh dev branch was not on giuthub yet. 
 # Daily Scrums
 
@@ -78,15 +96,23 @@ Notes
 
 
 After doing this project had a things that went well and this that did not go well. But as a team we worked togeather to fix issues.
+
 Isuess we had:
+
 We were still trying to figure out what do for the project in the planning
 The code did not run properly on docker
 We were a bit behind with coding
 Had issues pushing to guthub
+
+
 Things that went well:
+
+
+
 We were able to as a team work togeather
 Help eachother
 Stay in contact 
 Malachi was able to fix the docker issue
 Kalia was able to help out with the testing
 Steve was abel to write teh notes
+
